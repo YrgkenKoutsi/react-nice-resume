@@ -20,9 +20,9 @@ class App extends Component {
 
     ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
-
   }
 
+  // the method below retrives our data from a .json file
   getResumeData(){
     $.ajax({
       url:'./resumeData.json',
@@ -40,7 +40,8 @@ class App extends Component {
 
   componentDidMount(){
     this.getResumeData();
-  }
+}
+
 
   render() {
     return (
@@ -55,5 +56,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;
