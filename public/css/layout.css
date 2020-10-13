@@ -183,8 +183,8 @@ ul#nav li.current a { color: #fe6928; }
 
 #about {
    background: #000524;
-   padding-top: 96px;
-   padding-bottom: 66px;
+   padding-top: 126px;
+   padding-bottom: 166px;
    overflow: hidden;
 }
 
@@ -293,13 +293,13 @@ ul#nav li.current a { color: #fe6928; }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #333;
+  	background: #5c5a5a;
   	height: 42px;
   	border-radius: 0px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+   color: #5c5a5a;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
@@ -313,7 +313,7 @@ ul#nav li.current a { color: #fe6928; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #5c5a5a;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
@@ -792,6 +792,7 @@ call-to-action .button {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
+   padding-left: 345px;
    color: #636363;
 }
 #contact .section-head { margin-bottom: 42px; }
@@ -837,8 +838,8 @@ call-to-action .button {
    margin: 12px 0;
    color: #EBEEEE;
 	display: inline-block;
-	float: left;
-   width: 26%;
+	/* float: left;
+   width: 26%; */
 }
 #contact input,
 #contact textarea,
@@ -1007,11 +1008,12 @@ footer .social-links li:first-child { margin-left: 0; }
 
 
 .social .btn:first-child{
-   margin-right: 30px;
+   margin-right: 5px;
 }
 .social .btn{
-   padding-left: 30px;
-   padding-right: 30px; 
+   padding-left: 15px;
+   padding-right: 20px; 
+   border-radius: 15px;
 }
 .social .btn i{
    margin-right: 15px;
