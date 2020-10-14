@@ -12,13 +12,14 @@ class Contact extends Component {
     function sendEmail(e) {
       e.preventDefault();
   
-      emailjs.sendForm('gmail', 'template_nu4vj3a', e.target, 'user_pd9FMK4Y4XqxozmD0hGsQ')
+      emailjs.sendForm('gmail_personal', 'template_nu4vj3a', e.target, 'user_pd9FMK4Y4XqxozmD0hGsQ')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
         e.target.reset()
+        alert("Your form has been submited successfully!")
     }
 
 
@@ -48,30 +49,28 @@ class Contact extends Component {
                   <fieldset>
 
                      <div>
-                        <label htmlFor="contactName">Name <span className="required">*</span></label>
-                        <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+                        <label htmlFor="contactName">Name <span className="required"></span></label>
+                        <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange} required/>
                      </div>
 
                      <div>
-                        <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                        <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+                        <label htmlFor="contactEmail">Email <span className="required"></span></label>
+                        <input type="email" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange} required/>
                      </div>
 
                      <div>
                         <label htmlFor="contactSubject">Subject</label>
-                        <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+                        <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange} required/>
                      </div>
 
                      <div>
-                        <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        <label htmlFor="contactMessage">Message <span className="required"></span></label>
+                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
                      </div>
 
                      <div>
-                        <button className="submit">Submit</button>
-                        <span id="image-loader">
-                           <img alt="" src="images/loader.gif" />
-                        </span>
+                        {/* <button className="submit">Submit</button> */}
+                        <input className="submit" type="submit" value="Submit"></input>
                      </div>
                   </fieldset>
 				   </form>
