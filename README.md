@@ -11,6 +11,7 @@ This project forks from [https://github.com/nordicgiant2/react-nice-resume](http
 ### 2. Run the project
 ```shell
 npm i
+npm install emailjs-com --save
 npm start
 ```
 
