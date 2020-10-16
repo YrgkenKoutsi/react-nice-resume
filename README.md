@@ -15,7 +15,7 @@ npm install emailjs-com --save
 npm start
 ```
 
-### 3. BUild
+### 3. Build
 ```shell
 npm run build
 ```
