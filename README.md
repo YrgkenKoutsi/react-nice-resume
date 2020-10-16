@@ -1,6 +1,6 @@
 # React Nice Resume     
 
-### Check out the build [here](yrgkenkoutsi.github.io/react-portfolio/).
+### Check out the build [here](https://yrgkenkoutsi.github.io/react-portfolio/).
 
 ## Description
 This project forks from [https://github.com/nordicgiant2/react-nice-resume](https://github.com/nordicgiant2/react-nice-resume), I made some modifications and adjustments it so it reflects my needs, thanks to the [author](https://github.com/nordicgiant2). Please refer to the [author](https://github.com/nordicgiant2) if you want more information about this project.
